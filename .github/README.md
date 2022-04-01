@@ -8,6 +8,8 @@ Comment on this issue, if you'd like to see that happen: [Release binaries #6](h
 
 Want to download a binary? Head over to the releases page for Intel AMD and ARM64: [View releases](https://github.com/alexellis/tc-tap-redirect-builder/releases)
 
+Since the upstream project has no tags, the release names use a date / time format i.e. : `2022-04-01-1328`
+
 Copyright 2022 Alex Ellis, OpenFaaS Ltd
 
 License MIT
