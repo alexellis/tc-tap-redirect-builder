@@ -28,12 +28,12 @@ jobs:
         run: |
           cd tc-redirect-tap
           mkdir -p bin
-          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags  "-s -w" -a -installsuffix cgo -o bin/tc-redirect-tap ./cmd/tc-redirect-tap
-          CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -ldflags  "-s -w" -a -installsuffix cgo -o bin/tc-redirect-tap-arm64 ./cmd/tc-redirect-tap
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags  "-s -w" -a -installsuffix cgo -o ../bin/tc-redirect-tap ./cmd/tc-redirect-tap
+          CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -ldflags  "-s -w" -a -installsuffix cgo -o ../bin/tc-redirect-tap-arm64 ./cmd/tc-redirect-tap
 
       - name: Upload release binaries
         uses: alexellis/upload-assets@0.3.0
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
-          asset_paths: '["./bin/tc-redirect-tap/tc-redirect-tap*"]'
+          asset_paths: '["./bin/tc-redirect-tap*"]'
