@@ -1,5 +1,10 @@
 # tc-tap-redirect-builder
 
+[![Github All Releases](https://img.shields.io/github/downloads/alexellis/tc-tap-redirect-builder/total.svg)]()
+
+[![build](https://github.com/alexellis/tc-tap-redirect-builder/actions/workflows/build.yml/badge.svg)](https://github.com/alexellis/tc-tap-redirect-builder/actions/workflows/build.yml)
+
+
 This project is a builder to provide binary releases for [tc-tap-redirect from AWS Labs](https://github.com/awslabs/tc-redirect-tap/)
 
 The goal of this project is to become obsolete and to get merged upstream.
